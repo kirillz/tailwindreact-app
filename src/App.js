@@ -8,6 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
+   
     <div>
       <div className="flex mb-4">
         <div className="w-full bg-gray-500 h-12">
@@ -32,6 +33,7 @@ function App() {
         </div>
       </div>
     </div>
+
   );
 }
 
