@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <Router>
       <div>
-        <nav className="flex items-center justify-between flex-wrap bg-blue-900 p-6">
+        <nav className="flex items-center justify-between flex-wrap bg-gray-900 p-6">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
             <svg
               className="fill-current h-8 w-8 mr-2"
@@ -18,9 +18,9 @@ export default function Navigation() {
             <span className="font-semibold text-xl tracking-tight">СайтНейм</span>
           </div>
           <div className="block lg:hidden">
-            <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <button className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-400 focus:text-white focus:outline-none hover:text-white hover:border-white">
               <svg
-                className="fill-current h-3 w-3"
+                className="fill-current h-5 w-5"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <title>Menu</title>
@@ -32,24 +32,24 @@ export default function Navigation() {
             <div className="text-sm lg:flex-grow">
               <Link
                 to="/"
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                className="block py-1 mt-2 px-2 lg:inline-block lg:mt-0 text-xl text-teal-200 hover:text-white rounded hover:bg-gray-800 mr-4">
                 Главная
               </Link>
               <Link
                 to="/about"
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                className="block py-1 mt-2 px-2 lg:inline-block lg:mt-0 text-xl text-teal-200 hover:text-white rounded hover:bg-gray-800 mr-4">
                 О нас
               </Link>
               <Link
                 to="/users"
-                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                className="block py-1 mt-2 px-2 lg:inline-block lg:mt-0 text-xl text-teal-200 hover:text-white rounded hover:bg-gray-800">
                 Пользователи
               </Link>
             </div>
             <div>
               <a
                 href={'/login'}
-                className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+                className="inline-block text-md px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">
                 Вход
               </a>
             </div>
